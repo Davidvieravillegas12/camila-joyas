@@ -1,164 +1,647 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAMILA JOYAS</title>
+    <title>CAMILA JOYAS - Tienda Online</title>
+    
+    <!-- Bootstrap CSS - Esto hace que la página se vea bonita -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Nuestro CSS personalizado -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Logo de la página -->
     <link rel="icon" href="IMG/logo.png">
 </head>
 <body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Logo y nombre de la tienda -->
+            <a class="navbar-brand" href="#">
+                <img src="IMG/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                CAMILA JOYAS
+            </a>
+            
+            <!-- Botón para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Enlaces del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                
+                <!-- Botón del carrito (solo visual) -->
+                <button class="btn btn-outline-light">
+                    🛒 Carrito (0)
+                </button>
+            </div>
+        </div>
+    </nav>
 
-<!--esta es la seccion de mi encabezado de mi pagina-->
-    <header>
+    <!-- SECCIÓN PRINCIPAL -->
+    <section id="inicio" class="hero-section">
+        <!-- Imagen de fondo que ocupa toda la pantalla -->
+        <div class="hero-background">
+            <img src="IMG/Banner.jpg" alt="Banner Camila Joyas" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">Bienvenidos a Camila Joyas</h1>
+                    <p class="lead text-white mb-4">
+                        Descubre el mundo del lujo y la elegancia en nuestra joyería. 
+                        Joyas únicas en oro, plata, acero quirúrgico y cerámica artesanal.
+                    </p>
+                    <a href="#productos" class="btn btn-primary btn-lg">Ver Productos</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h1 align="center">"CAMILA JOYAS" </h1>
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Sobre Nosotros</h2>
+                    <p class="lead mb-4">
+                        En Camila Joyas, nos enorgullecemos de ser una joyería con una larga tradición de excelencia y
+                        pasión por la creación de piezas únicas y exquisitas. Desde hace 10 años, 
+                        nuestra joyería ha sido un referente en la industria por su compromiso con la calidad,
+                        la innovación y el servicio personalizado.
+                    </p>
+                    
+                    <!-- Características -->
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="feature-box text-center">
+                                <h3>💎</h3>
+                                <h4>Calidad Premium</h4>
+                                <p>Materiales de la más alta calidad</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box text-center">
+                                <h3>🔧</h3>
+                                <h4>Artesanal</h4>
+                                <p>Trabajos personalizados únicos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box text-center">
+                                <h3>❤️</h3>
+                                <h4>Pasión</h4>
+                                <p>Diseñado con amor y dedicación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--este es el menu de mi pagina -->
-        <nav>
-            <ul>
-                <li><a href="#introduccion">Inicio</a></li>
-                <li><a href="#productos">Acerca de</a></li>
-                <li><a href="#contacto">contacto</a></li>
-                <br>
+    <!-- SECCIÓN PRODUCTOS -->
+    <section id="productos" class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-5">Nuestros Productos</h2>
+            
+            <!-- PRODUCTOS -->
+            <div class="row">
+                <!-- Producto 1 - Anillo de Plata con Oro -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/roseta_plata.jpeg" class="card-img-top" alt="Anillo Plata Oro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Anillo de Plata con Oro</h5>
+                            <p class="card-text">Pieza elegante que combina plata con detalles en oro.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 150.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <nav>
+                <!-- Producto 2 - Sortija Roseta -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/anillo_morad.jpeg" class="card-img-top" alt="Sortija Roseta">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Sortija Roseta Plata</h5>
+                            <p class="card-text">Diseño de roseta en plata 950 con piedra granate.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 200.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </header>
+                <!-- Producto 3 - Anillo Hombre -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/plata_hombre.jpeg" class="card-img-top" alt="Anillo Hombre">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Anillo Hombre Plata</h5>
+                            <p class="card-text">Anillo elegante en plata 950 para hombre.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 180.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <main>
+                <!-- Producto 4 - Aretes Largos -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/aretes_largos.jpeg" class="card-img-top" alt="Aretes Largos">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Aretes Largos Plata</h5>
+                            <p class="card-text">Aretes elegantes de plata con diseño sofisticado.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 120.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-       <!--esta es mi seccion introductora-->
-      <section id="introduccion" align="center">
-         <h2>Bienvenidos a camila joyas</h2>
-         <p>Descubre el mundo del lujo y la elegancia en nuestra joyería. 
-            En camila joyas, nos esforzamos por ofrecerte las piezas más exquisitas y únicas para que puedas expresar tu estilo y personalidad. 
-            Explora nuestra colección de joyas de alta calidad, diseñadas para hacer que cada momento sea especial.
-            Realizamos trabajos personalizados en oro ,plata,acero quirurgico y ceramica artesanal.</p>
-            <br>
-             <img src="img/anillo_caballero.jpeg" alt width="400" height="300">
+                <!-- Producto 5 - Cadenas Dama -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/cadenas_dama.jpeg" class="card-img-top" alt="Cadenas Dama">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cadenas Dama Plata</h5>
+                            <p class="card-text">Cadenas elegantes de plata para complementar cualquier atuendo.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 250.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-             <h2>SOBRE NOSOTROS</h2>
-             <P>En camila joyas, nos enorgullecemos de ser una joyería con una larga tradición de excelencia y
-                 pasión por la creación de piezas únicas y exquisitas. Desde hace 10 años, 
-                 nuestra joyería ha sido un referente en la industria por su compromiso con la calidad,
-                  la innovación y el servicio personalizado.</P>
+                <!-- Producto 6 - Juego Cadena y Aretes -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/juego_cadena.jpeg" class="card-img-top" alt="Juego Cadena Aretes">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Juego Cadena y Aretes</h5>
+                            <p class="card-text">Set completo de cadena y aretes de plata.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 350.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      </section>
+                <!-- Producto 7 - Pulsera -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/pulsera.jpeg" class="card-img-top" alt="Pulsera Plata">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Pulsera Plata Dama</h5>
+                            <p class="card-text">Pulsera elegante de plata para agregar glamour.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 180.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!--esta es mi seccion de productos-->
-      <section id="productos" align="center">
-        <h2>PRODUCTOS</h2>
+                <!-- Producto 8 - Pulsera Colores -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/pulsera_colores.jpeg" class="card-img-top" alt="Pulsera Colores">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Pulsera Multicolor</h5>
+                            <p class="card-text">Pulsera vibrante con múltiples colores.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 90.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <article>
-            <h3>ANILLO DE PLATA CON ORO</h3>
-            <br>
+                <!-- Producto 9 - Roseta Rojo -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/roseta_rojo.jpeg" class="card-img-top" alt="Roseta Rojo">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Roseta Rojo Plata</h5>
+                            <p class="card-text">Roseta elegante en color rojo con detalles en plata.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 220.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <img src="IMG/roseta_plata.jpeg"t width="300"  height="300">
-            <p>Este anillo es una pieza elegante y sofisticada que combina la belleza de la plata 
-                con el lujo del oro,la base del anillo está hecha de plata de alta calidad,
-                 mientras que los detalles y acentos están hechos de oro, creando un contraste atractivo y sofisticado.</p>
+                <!-- Producto 10 - Roseta Azul -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/roseta_azul.jpeg" class="card-img-top" alt="Roseta Azul">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Roseta Azul Plata</h5>
+                            <p class="card-text">Roseta elegante en color azul con detalles en plata.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 220.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <article>
-                    <h3>SORTIJA ROSETA PLATA PARA DAMA</h3>
-                    <br>
+                <!-- Producto 11 - Roseta Celeste -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/roseta.celest.jpeg" class="card-img-top" alt="Roseta Celeste">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Roseta Celeste Plata</h5>
+                            <p class="card-text">Roseta elegante en color celeste con detalles en plata.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 220.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <img src="IMG/anillo_morad.jpeg" alt width="300" height="300">
-                    <img src="IMG/anillo_platead.jpeg" alt width="300" height="300">
-                    <img src="IMG/anillo_reyna.jpeg" alt width="300" height="300">
-                    <img src="IMG/anillos.jpeg" alt width="300" height="300">
-                    <br>
+                <!-- Producto 12 - Puñaleras -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/puñaleras.jpeg" class="card-img-top" alt="Puñaleras">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Puñaleras Plata</h5>
+                            <p class="card-text">Puñaleras elegantes de plata para complementar tu look.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 280.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <p>Esta hermosa sortija presenta un diseño de roseta en plata 950, 
-                        adornada con una piedra granate en el centro y rodeada de circones que brillan como
-                         diamantes. </p>
+                <!-- Producto 13 - Pulsera Rojo -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/pulsera_rojo.jpeg" class="card-img-top" alt="Pulsera Rojo">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Pulsera Rojo Plata</h5>
+                            <p class="card-text">Pulsera elegante en color rojo con detalles en plata.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 160.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                         <article>
-                            <h3>ANILLO PARA HOMBRE DE PLATA</h3>
-                            <br> 
+                <!-- Producto 14 - Pulsera Roj -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/pulsera_roj.jpeg" class="card-img-top" alt="Pulsera Roj">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Pulsera Rojo Claro</h5>
+                            <p class="card-text">Pulsera elegante en color rojo claro con detalles en plata.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 160.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <img src="IMG/aretes_largos.jpeg" width="300" height="300">
-                            <img src="IMG/aretes_cade.jpeg" width="300" height="300">
-                            <img src="IMG/cadenas_dama.jpeg" alt width="300" height="300">
-                            <img src="IMG/plata_hombre.jpeg" alt width="300" height="300">
-                            <P>Los anillos de plata 950 para hombre son joyas elegantes y sofisticadas,
-                                material de plata de alta calidad, lo que garantiza su durabilidad y resistencia.</P>
-                             <br>
+                <!-- Producto 15 - Plata con Oro -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/plata_con_oro.jpeg" class="card-img-top" alt="Plata con Oro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Juego Plata con Oro</h5>
+                            <p class="card-text">Set elegante que combina plata con detalles en oro.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 400.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                         </article>
-                         <h3>PULSERAS DE PLATA PARA DAMA</h3>
-                         <br>
-                         <img src="" alt width="300" height="300">
-                         <img src="" alt width="300" height="300">
-                         <img src="" alt width="300" height="300">
-                         <img src="" alt width="300" height="300">
-                         <p>Nuestras pulseras de plata para dama son piezas elegantes y sofisticadas que
-                             pueden agregar un toque de glamour a cualquier atuendo. 
-                             Hechas de plata de alta calidad, estas pulseras son duraderas y resistentes, perfectas para uso diario o para ocasiones especiales.
-                        </p>
-                         <br>
-                        <article>
-                            <H3>JUEGOS DE CADENA Y ARETES DE PLATA</H3>
-                            <img src="" alt width="300" height="300">
-                            <img src="" alt width="300" height="300">
-                            <img src="" alt width="300" height="300">
-                            <img src="img/img.jpeg
-                            " alt width="300" height="300">
-                            <p>Este elegante juego de aretes y cadena de plata es perfecto para agregar 
-                                un toque de sofisticación a cualquier look. La cadena está diseñada con un estilo clásico y los aretes presentan un diseño que complementa perfectamente la pieza.
-                            </p>
-                            
+                <!-- Producto 16 - Plata Anillo -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/plata_anillo.jpeg" class="card-img-top" alt="Plata Anillo">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Anillo Plata Clásico</h5>
+                            <p class="card-text">Anillo clásico de plata con diseño elegante.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 170.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                         </article>
-                            <section>
+                <!-- Producto 17 - Plata -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/plata.jpeg" class="card-img-top" alt="Plata">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Set Plata Premium</h5>
+                            <p class="card-text">Set premium de plata con múltiples piezas.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 450.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!--esta es mi seccion de contacto-->
-                            <section id="contacto" align="center"> 
-                                <h2>contáctamos</h2>
+                <!-- Producto 18 - Juego Roj -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/juego_roj.jpeg" class="card-img-top" alt="Juego Roj">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Juego Rojo Plata</h5>
+                            <p class="card-text">Set completo en color rojo con detalles en plata.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 380.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                <form action="#" method="post">
+                <!-- Producto 19 - Cadenas -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/cadenas.jpeg" class="card-img-top" alt="Cadenas">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cadenas Variadas</h5>
+                            <p class="card-text">Colección de cadenas elegantes en diferentes estilos.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 300.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <div>
-                                        <label for="nombre">Nombre:</label>
-                                        <input type="tex" id="nombre"
-                                        name="nombre" required>
+                <!-- Producto 20 - Cadena Arete -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/cadena_arete.jpeg" class="card-img-top" alt="Cadena Arete">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cadena con Aretes</h5>
+                            <p class="card-text">Cadena elegante que incluye aretes coordinados.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 320.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 21 - Aretes Plate -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/aretes_plate.jpeg" class="card-img-top" alt="Aretes Plate">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Aretes Plateados</h5>
+                            <p class="card-text">Aretes elegantes en acabado plateado.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 140.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 22 - Aretes Cade -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/aretes_cade.jpeg" class="card-img-top" alt="Aretes Cade">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Aretes con Cadena</h5>
+                            <p class="card-text">Aretes elegantes que incluyen cadena decorativa.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 180.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 23 - Aretes -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/aretes.jpeg" class="card-img-top" alt="Aretes">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Aretes Clásicos</h5>
+                            <p class="card-text">Aretes clásicos de plata con diseño atemporal.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 130.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 24 - Anillos -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/anillos.jpeg" class="card-img-top" alt="Anillos">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Colección Anillos</h5>
+                            <p class="card-text">Colección variada de anillos elegantes.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 280.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 25 - Anillo Reyna -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/anillo_reyna.jpeg" class="card-img-top" alt="Anillo Reyna">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Anillo Reyna</h5>
+                            <p class="card-text">Anillo elegante con diseño de reina.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 240.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 26 - Anillo Platead -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="IMG/anillo_platead.jpeg" class="card-img-top" alt="Anillo Platead">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Anillo Plateado</h5>
+                            <p class="card-text">Anillo elegante con acabado plateado.</p>
+                            <div class="mt-auto">
+                                <h4 class="text-primary">S/ 190.00</h4>
+                                <button class="btn btn-primary w-100">
+                                    🛒 Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-center mb-5">Contáctanos</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Información de Contacto</h5>
+                                    <p class="card-text">
+                                        📍 Catacaos, Piura<br>
+                                        📞 +51 999 999 999<br>
+                                        ✉️ info@camila-joyas.com
+                                    </p>
+                                    <div class="mt-3">
+                                        <h6>Síguenos en:</h6>
+                                        <a href="https://www.facebook.com/profile.php?id=100095183402532" class="btn btn-outline-primary me-2" target="_blank">
+                                            Facebook
+                                        </a>
+                                        <a href="https://www.instagram.com/camilajoyas.catacaos" class="btn btn-outline-danger" target="_blank">
+                                            Instagram
+                                        </a>
                                     </div>
-                                    <br>
-                                    <div>
-                                        <label for="Email"> Email: </label>
-                                        <input type="email" id="email"
-                                            name="email" required>
-                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Envíanos un Mensaje</h5>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="mensaje" class="form-label">Mensaje</label>
+                                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                    <br>
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>CAMILA JOYAS</h5>
+                    <p>Joyería artesanal con 10 años de experiencia.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 Camila Joyas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                                    <div>
-                                        <label for="mensaje">Mensaje:</label>
-                                        <textarea name="mensaje" id="mensaje"
-                                        rows="2" aria-required></textarea>
-                                    </div>
-                                     <br>
-                                    <div>
-                                        <input type="submit" value="enviar">
-                                    <div>
-
-                                </form>
-                        </main>
-
-                        <footer>
-                            <p>&copy; 2025 Todos los derechos reservados | Sigueme
-                                en:<p>
-                        
-                             <a href="www.facebook.com/https://www.facebook.com/profile.php?
-                             id=100095183402532">facebook</a>
-                             <br>
-                             <a href="www.instagram.com/https://www.instagram.com/camilajoyas.catacaos?igsh=Mm5ucThicWYwa2dh">instagram</a>
-                            
-
-
-
-
-
+    <!-- Bootstrap JavaScript (solo para el menú móvil) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
