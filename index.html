@@ -19,19 +19,20 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <!-- Logo y nombre de la tienda -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="IMG/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
-                CAMILA JOYAS
+                <span class="d-none d-sm-inline">CAMILA JOYAS</span>
+                <span class="d-inline d-sm-none">CAMILA</span>
             </a>
             
             <!-- Botón para móviles -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <!-- Enlaces del menú -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#inicio">Inicio</a>
                     </li>
@@ -47,8 +48,9 @@
                 </ul>
                 
                 <!-- Botón del carrito (solo visual) -->
-                <button class="btn btn-outline-light">
-                    🛒 Carrito (0)
+                <button class="btn btn-outline-light btn-sm">
+                    <span class="d-none d-md-inline">🛒 Carrito (0)</span>
+                    <span class="d-inline d-md-none">🛒 (0)</span>
                 </button>
             </div>
         </div>
@@ -64,7 +66,7 @@
         
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-8 col-sm-12">
                     <h1 class="display-4 fw-bold text-white mb-4">Bienvenidos a Camila Joyas</h1>
                     <p class="lead text-white mb-4">
                         Descubre el mundo del lujo y la elegancia en nuestra joyería. 
@@ -90,22 +92,22 @@
                     </p>
                     
                     <!-- Características -->
-                    <div class="row mt-5">
-                        <div class="col-md-4">
+                    <div class="row mt-5 g-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="feature-box text-center">
                                 <h3>💎</h3>
                                 <h4>Calidad Premium</h4>
                                 <p>Materiales de la más alta calidad</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="feature-box text-center">
                                 <h3>🔧</h3>
                                 <h4>Artesanal</h4>
                                 <p>Trabajos personalizados únicos</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="feature-box text-center">
                                 <h3>❤️</h3>
                                 <h4>Pasión</h4>
@@ -124,9 +126,9 @@
             <h2 class="display-5 fw-bold text-center mb-5">Nuestros Productos</h2>
             
             <!-- PRODUCTOS -->
-            <div class="row">
+            <div class="row g-4">
                 <!-- Producto 1 - Anillo de Plata con Oro -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/roseta_plata.jpeg" class="card-img-top" alt="Anillo Plata Oro">
                         <div class="card-body d-flex flex-column">
@@ -143,7 +145,7 @@
                 </div>
 
                 <!-- Producto 2 - Sortija Roseta -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/anillo_morad.jpeg" class="card-img-top" alt="Sortija Roseta">
                         <div class="card-body d-flex flex-column">
@@ -160,7 +162,7 @@
                 </div>
 
                 <!-- Producto 3 - Anillo Hombre -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/plata_hombre.jpeg" class="card-img-top" alt="Anillo Hombre">
                         <div class="card-body d-flex flex-column">
@@ -177,7 +179,7 @@
                 </div>
 
                 <!-- Producto 4 - Aretes Largos -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/aretes_largos.jpeg" class="card-img-top" alt="Aretes Largos">
                         <div class="card-body d-flex flex-column">
@@ -194,7 +196,7 @@
                 </div>
 
                 <!-- Producto 5 - Cadenas Dama -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/cadenas_dama.jpeg" class="card-img-top" alt="Cadenas Dama">
                         <div class="card-body d-flex flex-column">
@@ -211,7 +213,7 @@
                 </div>
 
                 <!-- Producto 6 - Juego Cadena y Aretes -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/juego_cadena.jpeg" class="card-img-top" alt="Juego Cadena Aretes">
                         <div class="card-body d-flex flex-column">
@@ -228,7 +230,7 @@
                 </div>
 
                 <!-- Producto 7 - Pulsera -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/pulsera.jpeg" class="card-img-top" alt="Pulsera Plata">
                         <div class="card-body d-flex flex-column">
@@ -245,7 +247,7 @@
                 </div>
 
                 <!-- Producto 8 - Pulsera Colores -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/pulsera_colores.jpeg" class="card-img-top" alt="Pulsera Colores">
                         <div class="card-body d-flex flex-column">
@@ -262,7 +264,7 @@
                 </div>
 
                 <!-- Producto 9 - Roseta Rojo -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/roseta_rojo.jpeg" class="card-img-top" alt="Roseta Rojo">
                         <div class="card-body d-flex flex-column">
@@ -279,7 +281,7 @@
                 </div>
 
                 <!-- Producto 10 - Roseta Azul -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/roseta_azul.jpeg" class="card-img-top" alt="Roseta Azul">
                         <div class="card-body d-flex flex-column">
@@ -296,7 +298,7 @@
                 </div>
 
                 <!-- Producto 11 - Roseta Celeste -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/roseta.celest.jpeg" class="card-img-top" alt="Roseta Celeste">
                         <div class="card-body d-flex flex-column">
@@ -313,7 +315,7 @@
                 </div>
 
                 <!-- Producto 12 - Puñaleras -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/puñaleras.jpeg" class="card-img-top" alt="Puñaleras">
                         <div class="card-body d-flex flex-column">
@@ -330,7 +332,7 @@
                 </div>
 
                 <!-- Producto 13 - Pulsera Rojo -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/pulsera_rojo.jpeg" class="card-img-top" alt="Pulsera Rojo">
                         <div class="card-body d-flex flex-column">
@@ -347,7 +349,7 @@
                 </div>
 
                 <!-- Producto 14 - Pulsera Roj -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/pulsera_roj.jpeg" class="card-img-top" alt="Pulsera Roj">
                         <div class="card-body d-flex flex-column">
@@ -364,7 +366,7 @@
                 </div>
 
                 <!-- Producto 15 - Plata con Oro -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/plata_con_oro.jpeg" class="card-img-top" alt="Plata con Oro">
                         <div class="card-body d-flex flex-column">
@@ -381,7 +383,7 @@
                 </div>
 
                 <!-- Producto 16 - Plata Anillo -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/plata_anillo.jpeg" class="card-img-top" alt="Plata Anillo">
                         <div class="card-body d-flex flex-column">
@@ -398,7 +400,7 @@
                 </div>
 
                 <!-- Producto 17 - Plata -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/plata.jpeg" class="card-img-top" alt="Plata">
                         <div class="card-body d-flex flex-column">
@@ -415,7 +417,7 @@
                 </div>
 
                 <!-- Producto 18 - Juego Roj -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/juego_roj.jpeg" class="card-img-top" alt="Juego Roj">
                         <div class="card-body d-flex flex-column">
@@ -432,7 +434,7 @@
                 </div>
 
                 <!-- Producto 19 - Cadenas -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/cadenas.jpeg" class="card-img-top" alt="Cadenas">
                         <div class="card-body d-flex flex-column">
@@ -449,7 +451,7 @@
                 </div>
 
                 <!-- Producto 20 - Cadena Arete -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/cadena_arete.jpeg" class="card-img-top" alt="Cadena Arete">
                         <div class="card-body d-flex flex-column">
@@ -466,7 +468,7 @@
                 </div>
 
                 <!-- Producto 21 - Aretes Plate -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/aretes_plate.jpeg" class="card-img-top" alt="Aretes Plate">
                         <div class="card-body d-flex flex-column">
@@ -483,7 +485,7 @@
                 </div>
 
                 <!-- Producto 22 - Aretes Cade -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/aretes_cade.jpeg" class="card-img-top" alt="Aretes Cade">
                         <div class="card-body d-flex flex-column">
@@ -500,7 +502,7 @@
                 </div>
 
                 <!-- Producto 23 - Aretes -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/aretes.jpeg" class="card-img-top" alt="Aretes">
                         <div class="card-body d-flex flex-column">
@@ -517,7 +519,7 @@
                 </div>
 
                 <!-- Producto 24 - Anillos -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/anillos.jpeg" class="card-img-top" alt="Anillos">
                         <div class="card-body d-flex flex-column">
@@ -534,7 +536,7 @@
                 </div>
 
                 <!-- Producto 25 - Anillo Reyna -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/anillo_reyna.jpeg" class="card-img-top" alt="Anillo Reyna">
                         <div class="card-body d-flex flex-column">
@@ -551,7 +553,7 @@
                 </div>
 
                 <!-- Producto 26 - Anillo Platead -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="card h-100">
                         <img src="IMG/anillo_platead.jpeg" class="card-img-top" alt="Anillo Platead">
                         <div class="card-body d-flex flex-column">
@@ -574,10 +576,10 @@
     <section id="contacto" class="py-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <h2 class="display-5 fw-bold text-center mb-5">Contáctanos</h2>
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-md-12">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Información de Contacto</h5>
@@ -588,18 +590,22 @@
                                     </p>
                                     <div class="mt-3">
                                         <h6>Síguenos en:</h6>
-                                        <a href="https://www.facebook.com/profile.php?id=100095183402532" class="btn btn-outline-primary me-2" target="_blank">
-                                            Facebook
-                                        </a>
-                                        <a href="https://www.instagram.com/camilajoyas.catacaos" class="btn btn-outline-danger" target="_blank">
-                                            Instagram
-                                        </a>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <a href="https://www.facebook.com/profile.php?id=100095183402532" class="btn btn-outline-primary" target="_blank">
+                                                <span class="d-none d-sm-inline">Facebook</span>
+                                                <span class="d-inline d-sm-none">FB</span>
+                                            </a>
+                                            <a href="https://www.instagram.com/camilajoyas.catacaos" class="btn btn-outline-danger" target="_blank">
+                                                <span class="d-none d-sm-inline">Instagram</span>
+                                                <span class="d-inline d-sm-none">IG</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Envíanos un Mensaje</h5>
                                     <form>
@@ -629,13 +635,13 @@
     <!-- PIE DE PÁGINA -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
                     <h5>CAMILA JOYAS</h5>
-                    <p>Joyería artesanal con 10 años de experiencia.</p>
+                    <p class="mb-0">Joyería artesanal con 10 años de experiencia.</p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <p>&copy; 2025 Camila Joyas. Todos los derechos reservados.</p>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <p class="mb-0">&copy; 2025 Camila Joyas. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
