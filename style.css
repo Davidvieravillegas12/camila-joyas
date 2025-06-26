@@ -54,6 +54,7 @@ body {
 .card-img-top {
     height: 250px;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-title {
@@ -70,6 +71,11 @@ body {
     border-color: #8B4513;
 }
 
+.btn-primary:hover {
+    background-color: #A0522D;
+    border-color: #A0522D;
+}
+
 .navbar-brand {
     color: #FFD700 !important;
     font-weight: bold;
@@ -84,12 +90,95 @@ footer {
     background: linear-gradient(135deg, #2C1810 0%, #8B4513 100%);
 }
 
-@media (max-width: 768px) {
+.feature-box {
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive básico - Solo lo esencial */
+
+/* Móviles pequeños */
+@media (max-width: 576px) {
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 1.8rem !important;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .feature-box {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .feature-box h3 {
+        font-size: 2.5rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2rem !important;
     }
     
     .card-img-top {
         height: 200px;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .feature-box h3 {
+        font-size: 2.8rem;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .hero-section h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .card-img-top {
+        height: 220px;
+    }
+    
+    .display-5 {
+        font-size: 2.2rem;
+    }
+    
+    .feature-box h3 {
+        font-size: 3rem;
     }
 } 
